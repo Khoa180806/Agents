@@ -10,6 +10,8 @@
 > Các quy tắc này có **ưu tiên cao nhất** và AI phải tuân theo tuyệt đối.
 
 ### 1.1 Nguyên Tắc Chung
+- **LUÔN LUÔN** đọc thư mục `.agents/` khi bắt đầu để nắm rõ các quy tắc (rules), kỹ năng (skills) và quy trình (workflows) đã được định nghĩa cho dự án.
+- **TỰ ĐỘNG ÁP DỤNG WORKFLOW**: Khi người dùng chọn hoặc chỉ định một workflow cụ thể (trong thư mục `.agents/workflows/`), AI Assistant phải đọc và tuân thủ workflow đó, đồng thời tự động tìm đọc và áp dụng các rules (trong `.agents/rules/`) và skills (trong `.agents/skills/`) được liên kết hoặc tham chiếu bởi workflow đó. Quy định này áp dụng đồng thời với `GEMINI.md`.
 - **LUÔN** đưa ra **Implementation Plan** hoặc **Task checklist** trước khi bắt đầu code bất kỳ tính năng nào không tầm thường. Chờ xác nhận từ người dùng.
 - **KHÔNG** tự ý xóa, ghi đè, hay thay thế code cũ mà không thông báo rõ ràng.
 - **PHẢI** giải thích lý do kỹ thuật cụ thể trước khi thực hiện bất kỳ refactor lớn nào.
@@ -129,5 +131,5 @@ refactor(user-service): extract email validation to shared utility
 
 ---
 
-*Cập nhật lần cuối: 2026-06-08 | Phiên bản: 1.0.0*
+*Cập nhật lần cuối: 2026-06-11 | Phiên bản: 1.0.1*
 *Mọi thay đổi với file này phải được thảo luận và đồng ý bởi toàn bộ team.*
