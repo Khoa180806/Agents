@@ -2,9 +2,9 @@
 id: workflow-new-feature
 name: "New Feature Development"
 tags: [development, feature, planning, coding, review]
-version: "1.0.0"
+version: "1.0.1"
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-06-13
 author: "Personal"
 estimated_duration: "~4-8 giờ"
 phases: 4
@@ -143,7 +143,7 @@ Tiêu chí hoàn thành Phase 1:
 **Ai thực hiện**: 🤝 Cả hai  
 **Action**:
 - Implement từng task trong checklist, theo thứ tự
-- Sau mỗi task nhỏ: commit với message theo Conventional Commits
+- Sau mỗi task nhỏ: commit với message theo Conventional Commits (Agent **LUÔN** chủ động gợi ý commit message tương ứng sau khi đề xuất hoặc thực hiện thay đổi)
 - Áp dụng `coding-standards` rule suốt quá trình
 
 **Output**:
@@ -298,3 +298,4 @@ Sau khi hoàn thành workflow này:
 | Version | Ngày | Thay đổi |
 |---------|------|---------|
 | 1.0.0 | 2026-06-08 | Khởi tạo |
+| 1.0.1 | 2026-06-13 | Thêm quy tắc Agent luôn gợi ý commit message sau mỗi thay đổi |

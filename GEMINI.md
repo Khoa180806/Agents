@@ -24,6 +24,7 @@
 - Luôn **tuân theo architecture patterns** đã được thiết lập trong dự án.
 - Khi có nhiều cách giải quyết, trình bày **trade-offs** của từng cách trước khi đề xuất.
 - Giữ nguyên **docstrings và comments** hiện có, trừ khi được yêu cầu thay đổi.
+- **LUÔN** chủ động gợi ý commit message tương ứng (tuân thủ định dạng Conventional Commits ở mục 3.2) sau khi đề xuất hoặc thực hiện các thay đổi (thêm/sửa/xóa) file hoặc code.
 
 ### 1.3 Ngôn Ngữ Giao Tiếp
 - Giao tiếp với người dùng bằng **tiếng Việt**.
@@ -131,5 +132,5 @@ refactor(user-service): extract email validation to shared utility
 
 ---
 
-*Cập nhật lần cuối: 2026-06-11 | Phiên bản: 1.0.1*
+*Cập nhật lần cuối: 2026-06-13 | Phiên bản: 1.0.2*
 *Mọi thay đổi với file này phải được thảo luận và đồng ý bởi toàn bộ team.*

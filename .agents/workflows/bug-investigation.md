@@ -2,9 +2,9 @@
 id: workflow-bug-investigation
 name: "Bug Investigation & Fix"
 tags: [debugging, bugfix, investigation, testing]
-version: "1.0.0"
+version: "1.0.1"
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-06-13
 author: "Personal"
 estimated_duration: "~1-4 giờ"
 phases: 3
@@ -164,7 +164,7 @@ Tiêu chí hoàn thành Phase 1:
 **Action**:
 - Tạo branch: `bugfix/[ticket-id]-[mô-tả-ngắn]`
 - Implement fix theo strategy đã chọn
-- Commit với message rõ ràng: `fix([scope]): [mô tả vấn đề đã fix]`
+- Commit với message rõ ràng: `fix([scope]): [mô tả vấn đề đã fix]` (Agent **LUÔN** chủ động gợi ý commit message tương ứng sau khi đề xuất hoặc thực hiện thay đổi)
 
 **Output**:
 - [ ] Fix implemented trên branch riêng
@@ -298,3 +298,4 @@ Sau khi hoàn thành workflow này:
 | Version | Ngày | Thay đổi |
 |---------|------|---------|
 | 1.0.0 | 2026-06-08 | Khởi tạo |
+| 1.0.1 | 2026-06-13 | Thêm quy tắc Agent luôn gợi ý commit message sau mỗi thay đổi |
