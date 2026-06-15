@@ -66,6 +66,13 @@ Chuỗi bước **tuần tự và có cấu trúc** để hoàn thành một tas
 
 ---
 
+## 🛠️ Hướng Dẫn Setup (Setup Instructions)
+
+1. **Cấu hình Global Rules**: Copy file `GEMINI.md` vào thư mục cấu hình toàn cục `~/.gemini` (đối với Windows là `%USERPROFILE%\.gemini` hoặc `C:\Users\<Tên-User>\.gemini`). Tạo thư mục `.gemini` nếu chưa có.
+2. **Cấu hình Project-specific Agents**: Copy thư mục `.agents` vào thư mục gốc của dự án của bạn (hãy xóa các file `README.md` và `_template.md` bên trong các thư mục con `.agents/rules/`, `.agents/skills/`, và `.agents/workflows/` đi).
+
+---
+
 ## ⚡ Hướng Dẫn Nhanh (Quick Start)
 
 ### Dùng với Gemini / Antigravity
