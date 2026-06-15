@@ -36,6 +36,7 @@ Một skill là tài liệu mô tả **cách agent thực hiện một nhiệm v
 | `_template.md` | Template mẫu — copy để tạo skill mới |
 | `code-review.md` | Review code theo checklist chuẩn |
 | `debug-assistant.md` | Hỗ trợ debug step-by-step có cấu trúc |
+| `generate-web-ui-functional-tests.md` | Hướng dẫn Agent sinh kịch bản kiểm thử chức năng giao diện web |
 
 ---
 

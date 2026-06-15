@@ -32,6 +32,7 @@ Một workflow là tài liệu hướng dẫn agent (và bạn) đi qua **toàn 
 | `_template.md` | Template mẫu — copy để tạo workflow mới |
 | `new-feature-development.md` | Phát triển feature từ yêu cầu đến PR |
 | `bug-investigation.md` | Điều tra và fix bug có hệ thống |
+| `web-ui-functional-testing-workflow.md` | Quy trình phối hợp kiểm thử chức năng giao diện web |
 
 ---
 

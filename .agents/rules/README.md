@@ -42,6 +42,7 @@ Một rule là một tập hợp **ràng buộc, tiêu chuẩn hoặc hành vi**
 | `_template.md` | Template mẫu — copy để tạo rule mới |
 | `coding-standards.md` | Quy tắc viết code (style, naming, formatting) |
 | `communication-style.md` | Quy tắc giao tiếp (ngôn ngữ, tone, cách phản hồi) |
+| `web-ui-functional-testing-rules.md` | Quy tắc và tiêu chuẩn thiết kế kịch bản kiểm thử chức năng giao diện web |
 
 ---
 
