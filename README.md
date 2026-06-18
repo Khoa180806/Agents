@@ -112,9 +112,38 @@ Chuỗi các hành động **có cấu trúc và mang tính tuần tự** để 
 1.  Nhập các quy tắc chung (rules) vào mục **Project Instructions**.
 2.  Tải các file skill và workflow cần thiết lên phần **Project Knowledge** của Claude.
 
-### Dùng với Codex (OpenAI)
-1.  Đặt nội dung rules vào mục System Prompt hoặc file `.codex/instructions.md`.
-2.  Đưa nội dung file skill/workflow mà bạn muốn sử dụng vào đầu cuộc hội thoại chat.
+### Dùng với Codex App
+1.  **Global Rules**: Copy file `GEMINI.md` vào thư mục người dùng `~/.codex/` (tương tự như `.gemini`).
+2.  **Project Rules**: Copy thư mục `.agents` vào thư mục gốc của dự án.
+3.  **System Prompt**: Trong Codex App, vào Settings > Custom Instructions và thêm:
+    ```text
+    Đọc và áp dụng các quy tắc từ file GEMINI.md và thư mục .agents/
+    ```
+4.  **Sử dụng Skills/Workflows**: Tag file trực tiếp trong chat:
+    ```text
+    @.agents/skills/code-review.md - Thực hiện code review cho file hiện tại
+    ```
+
+### Dùng với Kiro IDE
+1.  **Steering Files (Rules)**: Copy nội dung các rules vào thư mục `.kiro/steering/`:
+    ```bash
+    mkdir -p .kiro/steering
+    cp .agents/rules/*.md .kiro/steering/
+    ```
+2.  **Skills**: Kiro hỗ trợ skills thông qua thư mục `.kiro/skills/`:
+    ```bash
+    mkdir -p .kiro/skills
+    cp .agents/skills/*.md .kiro/skills/
+    ```
+3.  **Workflows**: Sử dụng Spec mode của Kiro hoặc tạo custom agents:
+    ```bash
+    mkdir -p .kiro/agents
+    # Tạo custom agent dựa trên workflow
+    ```
+4.  **Kích hoạt**: 
+    *   Rules tự động áp dụng khi đặt trong `.kiro/steering/`
+    *   Skills có thể được kích hoạt bằng cách gọi tên trong chat
+    *   Workflows thực hiện thông qua Spec session hoặc invoke custom agent
 
 ---
 
